@@ -1,31 +1,33 @@
-let xPos = 400;
-let yPos = 200;
-let velocity = 3;
+let circle= {
+color:"black",
+ x: 400,
+y:200,
+velocity: 1,
+
+drawCircle:function() {
+  ellipse(this.x, this.y, 80, 80);
+},
+
+moveCircle:function(){
+this.x=this.x+this.velocity;
+if (this.x>=800) {
+  this.x=0;
+}
+
+}
+
+}
 
 function setup() {
   createCanvas(800, 600);
+  
 }
 
 function draw() {
-  background(204);
-  //make the ellipse follow your mouse
-  let d = dist(xPos, yPos, mouseX, mouseY);
-  ellipse(xPos, yPos, 80, 80);
-  if (xPos <= mouseX) {
-    xPos = xPos + velocity;
-  } else if (xPos >= mouseX) {
-    xPos = xPos - velocity;
-  }
+  background("blue");
+  circle.drawCircle();
+  circle.moveCircle();
+  
 
-  if (yPos <= mouseY) {
-    yPos = yPos + velocity;
-  } else if (yPos >= mouseY) {
-    yPos = yPos - velocity;
-  }
-
-  if (d <= 7) {
-    fill(252, 3, 57);
-  } else if (d >= 7) {
-    fill(0, 0, 0);
-  }
+  
 }
