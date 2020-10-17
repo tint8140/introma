@@ -1,11 +1,11 @@
 let circle= {
     color:"pink",
-     x: 400,
+     x: 300,
     y:200,
     velocity:1,
     
     drawCircle:function() {
-      ellipse(this.x, this.y, 80, 80);
+      ellipse(this.x, this.y, 50, 50);
     },
 
 
@@ -32,7 +32,7 @@ let circle= {
       background("blue");
       for (let i=0; i<balls.length; i++) {
           balls[i].x+=0.5;
-          balls[i].y=i*80;
+          balls[i].y=i*100+40;
           balls[i].drawCircle();
 
       }
