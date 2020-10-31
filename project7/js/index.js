@@ -15,7 +15,7 @@ function draw() {
 
   // Background
   background("gray");
-
+b
   // Paddle
   fill('pink');
   rect(mouseX, 375, 90, 15);
