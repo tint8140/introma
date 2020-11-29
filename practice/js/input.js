@@ -6,6 +6,7 @@ function rollDie(){
     let randRoll= 1+ Math.floor(Math.random()*dieSize);
     dvResult.innerHTML= randRoll;
 
+        // reset value
     // txtDieSize.value= "";
 }
 
