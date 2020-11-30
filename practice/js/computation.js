@@ -1,33 +1,35 @@
-//PART FIVE
-//application level variables
-// var txtSentence = document.getElementById("txtSentence");
-// var dvOutput = document.getElementById("dvOutput");
-// var allWords = [];
+// // PART FIVE
+// //application level variables
+var txtSentence = document.getElementById("txtSentence");
+var dvOutput = document.getElementById("dvOutput");
+var allWords = [];
 
-// function breakString() {
-//     var newWord = txtSentence.value;
+function breakString() {
+    var newWord = txtSentence.value;
 
-//     allWords.push[newWord];
-//     // console.log(allWords);
+    allWords.push(newWord);
+   
 
-//     dvOutput.innerHTML = "";
-//     //Displays all words
-//     for(var i=0; i<allWords.length; i++){
-//         var newEl =document.createElement("div");
+    dvOutput.innerHTML = "";
+    //Displays all words
+    for(var i=0; i< allWords.length; i++) {
+        var newEl =document.createElement("div");
 
-//         newEl.innerHTML = allWord[i];
+        newEl.innerHTML = allWords[i];
 
-//         if(allWords[i] == "cloud") {
-//             newEl.style.color = "#4287f5";
-//         }
-//         dvOutput.appendChild(newEl);
 
-       
-
-//     }
+         //if the word says "cloud -> display in blue
+        if(allWords[i] == "cloud") {
+            newEl.style.color = "#4287f5";
+        }
+        
+        dvOutput.appendChild(newEl);
     
-//     //if the word says "cloud -> display in blue
-// }
+    }
+    
+   
+   
+}
 
 
 //Part One (Splitting strings into arrays)
@@ -87,7 +89,7 @@
 
 
 
-//PART FOUR
+// PART FOUR
 // var pizzas= [
 //     { name: "Pepperoni", price: 12},
 //     { name: "Cheese", price: 9},
