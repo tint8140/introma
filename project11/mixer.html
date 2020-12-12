@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Mixer</title>
+    
+</head>
+<body>
+    
+   
+    <div id="mixer" style="background-color: black; margin-top: 50px; margin-left: 50px; height: 200px; width: 600px;"></div>
+
+    <div id="currentColor" style="border: 1px solid #000; text-align: center; width: 600px; height: 25px; padding-top: 10px; margin-left: 50px; margin-top: 20px;">Current Color: rgb(0,0,0) </div>
+
+<div id="redChange" style="margin-left: 50px; margin-top: 20px;">Red:
+    <button type="button" onclick="addRed1()" style="margin-left: 50px;">+1</button>
+    <button type="button" onclick="addRed5()" style="margin:5px;">+5</button>
+    <button type="button" onclick="addRed10()">+10</button>
+</div>
+    </br>
+
+<div id="greenChange" style="margin-left: 35px;">Green:
+    <button type="button" onclick="addGreen1()" style="margin-left: 50px;">+1</button>
+    <button type="button" onclick="addGreen5()" style="margin: 5px;">+5</button>
+    <button type="button" onclick="addGreen10()">+10</button>
+</div>
+    </br>
+
+<div id="blueChange" style="margin-left: 43px;">Blue:
+    <button type="button" onclick="addBlue1()" style="margin-left: 50px;">+1</button>
+    <button type="button" onclick="addBlue5()" style="margin: 5px;">+5</button>
+    <button type="button" onclick="addBlue10()">+10</button>
+</div>
+    <script src="js/mixer.js"></script>
+</body>
+</html>
