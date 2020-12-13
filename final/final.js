@@ -176,8 +176,9 @@ const gameBoard = (() => {
         const winnerName = document.querySelector(`#playerName${outcome}`).value;
         playText.textContent = `${winnerName} has won!`;
         playText.classList.add('winner');
+        
       }
-  
+      document.getElementById("playText").reset();
     }
   
     // checks if a win condition has been met (3 in a row)
@@ -302,7 +303,6 @@ const gameBoard = (() => {
   // use () => functionName(param) because just functionName(param) results in function running immediately
   document.querySelector("#resetRound").addEventListener('click', () => game.reset("round"));
   document.querySelector("#resetGame").addEventListener('click', () => game.reset("game"));
- 
 
   
   gameBoard.display();
