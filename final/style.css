@@ -1,0 +1,102 @@
+* {
+  font-family: "Roboto", "Arial";
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  margin: auto;
+  align-items: center;
+}
+
+#board {
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  width: 450px;
+  height: 450px;
+  align-items: center;
+  justify-content: center;
+}
+
+.square {
+  display: flex;
+  box-sizing: border-box;
+  border: 1px solid black;
+  width: 150px;
+  height: 150px;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  font-size: xx-large;
+  cursor: pointer;
+}
+
+.clicked {
+  cursor: not-allowed;
+}
+
+.players {
+  font-size: xx-large;
+  width: 50;
+}
+
+.player-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.player-marker {
+  padding: 0em;
+  width: 1em;
+}
+
+input {
+  font-size: xx-large;
+  margin-bottom: 1em;
+}
+
+.winner {
+  color: #155724;
+  border-color: #c3e6cb;
+  width: 50;
+}
+
+h1 {
+  text-align: center;
+  font-size: 54px;
+  text-transform: uppercase;
+  color: #3e0249;
+}
+
+button {
+  margin: 1rem;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  color: #fff;
+  background-color: #343a40;
+  border-color: #343a40;
+}
+
+.crownMarker {
+  visibility: hidden;
+}
+
+.controlButtons {
+  display: flex;
+  flex-direction: row;
+}
